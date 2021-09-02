@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품수 계산하기</title>
+
+    <style>
+        div#wrap {
+            width: 500px;
+            height: 200px;
+            padding: 20px;
+            padding-bottom: 50px;
+            border: 1px solid #000;
+        }
+        
+        input {
+            width: 50px;
+            text-align: center;
+            border: 1px solid #aaa;
+        }
+
+        div#countBox {
+            width: 300px;
+            padding: 30px;
+            border: 1px solid #000;
+        }
+
+        button {
+            background-color: #fff;
+            border: 1px solid #aaa;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>상품 가격 계산</h1>
+        <div id="countBox">
+            상품가격
+            <span id="price">5000</span>
+            원
+            <button type="button" id="subBtn" onclick="fn_subCount()">-</button>
+            <input type="text" id="productCount" value="0" onchange="fn_calResult()">
+            <button type="button" id="addBtn" onclick="fn_addCount()">+</button>
+        </div>
+        <h3>총 액 : <span id="result">0</span>원</h3>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
