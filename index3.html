@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자형과 숫자형의 누적 결과 출력</title>
+    <style>
+        div#wrap {
+            width: 600px;
+            padding: 20px;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        legend, input, button {
+            font-size: 30px;
+        }
+
+        fieldset {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        fieldset div, span {
+            font-size: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>문자형과 숫자형의 누적 결과 출력</h1>
+
+        <fieldset>
+            <legend>입력</legend>
+            <input type="text" id="ins" size="4">
+            <!-- ins = insert -->      
+            <button type="button" onclick="fnAdd()">+</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>숫자형 누적 연산 결과</legend>
+            <div>
+                출력결과 : 
+                <span id="numberType"></span>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>문자형 누적 연결 결과</legend>
+            <div>
+                출력결과 : 
+                <span id="stirngType"></span>
+            </div>
+        </fieldset>
+    </div>
+
+</body>
+<script src="script3.js"></script>
+</html>
