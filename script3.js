@@ -27,11 +27,12 @@ function fnAdd() {
 
             // 2. 문자형 누적 연산
             if( strCurrent == 0) {
-                document.getElementById("stirngType").innerText = strVal;
+                document.getElementById("stringType").innerHTML = "<div class=\"sample_" + strCurrent + "\">" + strVal + "</div>";
                 strCurrent++;
             } else if( strCurrent != 0) {
-                strVal = " + " + strVal;
-                document.getElementById("stirngType").append(strVal);
+                strVal = "<div class=\"sample_" + strCurrent + "\">" + strVal + "</div>";
+                document.getElementById("stringType").innerHTML += strVal;
+                strCurrent++;
             }
     }
 
